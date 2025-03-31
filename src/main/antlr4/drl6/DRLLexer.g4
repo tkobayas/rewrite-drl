@@ -32,7 +32,7 @@ import JavaLexer;
     }
 
     public boolean isRhsDrlEnd() {
-        return new LexerHelper(_input).isRhsDrlEnd();
+        return new org.drools.drl.parser.antlr4.drl6.LexerHelper(_input).isRhsDrlEnd();
     }
 }
 

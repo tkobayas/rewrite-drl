@@ -1,5 +1,5 @@
 // Generated from JavaParser.g4 by ANTLR 4.10.1
-package org.drools.drl.parser.antlr4;
+package org.drools.drl.parser.antlr4.drl6.gen;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**

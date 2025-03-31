@@ -1,17 +1,13 @@
 // Generated from DRLLexer.g4 by ANTLR 4.10.1
-package org.drools.drl.parser.antlr4;
-
-import org.antlr.v4.runtime.CharStream;
+package org.drools.drl.parser.antlr4.drl6.gen;
 import org.antlr.v4.runtime.Lexer;
-import org.antlr.v4.runtime.RuleContext;
-import org.antlr.v4.runtime.RuntimeMetaData;
-import org.antlr.v4.runtime.Vocabulary;
-import org.antlr.v4.runtime.VocabularyImpl;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.LexerATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.TokenStream;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class DRLLexer extends Lexer {
@@ -232,7 +228,7 @@ public class DRLLexer extends Lexer {
 	    }
 
 	    public boolean isRhsDrlEnd() {
-	        return new LexerHelper(_input).isRhsDrlEnd();
+	        return new org.drools.drl.parser.antlr4.drl6.LexerHelper(_input).isRhsDrlEnd();
 	    }
 
 

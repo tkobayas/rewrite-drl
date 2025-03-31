@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.drools.drl.parser.antlr4;
+package org.drools.drl.parser.antlr4.drl6;
 
 /**
  * Simple holder class identifying all the DRL soft keywords. This is used by

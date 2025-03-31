@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.drools.drl.parser.antlr4;
+package org.drools.drl.parser.antlr4.drl6;
 
 import java.util.Set;
 
@@ -40,21 +40,21 @@ public class LexerHelper {
                                                                     DroolsSoftKeywords.QUERY
     );
     private static final Set<String> attributeKeywordsList = Set.of(DroolsSoftKeywords.SALIENCE,
-                                                                      DroolsSoftKeywords.ENABLED,
-                                                                      DroolsSoftKeywords.NO + "-" + DroolsSoftKeywords.LOOP,
-                                                                      DroolsSoftKeywords.AUTO + "-" + DroolsSoftKeywords.FOCUS,
-                                                                      DroolsSoftKeywords.LOCK + "-" + DroolsSoftKeywords.ON + "-" + DroolsSoftKeywords.ACTIVE,
-                                                                      DroolsSoftKeywords.AGENDA + "-" + DroolsSoftKeywords.GROUP,
-                                                                      DroolsSoftKeywords.ACTIVATION + "-" + DroolsSoftKeywords.GROUP,
-                                                                      DroolsSoftKeywords.RULEFLOW + "-" + DroolsSoftKeywords.GROUP,
-                                                                      DroolsSoftKeywords.DATE + "-" + DroolsSoftKeywords.EFFECTIVE,
-                                                                      DroolsSoftKeywords.DATE + "-" + DroolsSoftKeywords.EXPIRES,
-                                                                      DroolsSoftKeywords.DIALECT,
-                                                                      DroolsSoftKeywords.CALENDARS,
-                                                                      DroolsSoftKeywords.TIMER,
-                                                                      DroolsSoftKeywords.DURATION,
-                                                                      DroolsSoftKeywords.REFRACT,
-                                                                      DroolsSoftKeywords.DIRECT);
+                                                                    DroolsSoftKeywords.ENABLED,
+                                                                    DroolsSoftKeywords.NO + "-" + DroolsSoftKeywords.LOOP,
+                                                                    DroolsSoftKeywords.AUTO + "-" + DroolsSoftKeywords.FOCUS,
+                                                                    DroolsSoftKeywords.LOCK + "-" + DroolsSoftKeywords.ON + "-" + DroolsSoftKeywords.ACTIVE,
+                                                                    DroolsSoftKeywords.AGENDA + "-" + DroolsSoftKeywords.GROUP,
+                                                                    DroolsSoftKeywords.ACTIVATION + "-" + DroolsSoftKeywords.GROUP,
+                                                                    DroolsSoftKeywords.RULEFLOW + "-" + DroolsSoftKeywords.GROUP,
+                                                                    DroolsSoftKeywords.DATE + "-" + DroolsSoftKeywords.EFFECTIVE,
+                                                                    DroolsSoftKeywords.DATE + "-" + DroolsSoftKeywords.EXPIRES,
+                                                                    DroolsSoftKeywords.DIALECT,
+                                                                    DroolsSoftKeywords.CALENDARS,
+                                                                    DroolsSoftKeywords.TIMER,
+                                                                    DroolsSoftKeywords.DURATION,
+                                                                    DroolsSoftKeywords.REFRACT,
+                                                                    DroolsSoftKeywords.DIRECT);
 
     private final CharStream input;
     private int lookAheadCounter;
@@ -73,7 +73,7 @@ public class LexerHelper {
      * TODO: This method is low-level and may be too complex in order to keep backward compatibility.
      *       This could be refactored by going back to a parser rather than the lexer island mode.
      */
-    boolean isRhsDrlEnd() {
+    public boolean isRhsDrlEnd() {
         if (!validateDrlEnd()) {
             return false;
         }

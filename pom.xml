@@ -55,7 +55,6 @@
         <dependency>
             <groupId>org.openrewrite</groupId>
             <artifactId>rewrite-test</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -181,11 +180,13 @@
                                     <goal>antlr4</goal>
                                 </goals>
                                 <configuration>
+                                    <sourceDirectory>${basedir}/src/main/antlr4/drl6</sourceDirectory>
+                                    <outputDirectory>${basedir}/src/main/java/org/drools/drl/parser/antlr4/drl6/gen</outputDirectory>
                                     <arguments>
                                         <argument>-package</argument>
-                                        <argument>org.drools.drl.parser.antlr4</argument>
+                                        <argument>org.drools.drl.parser.antlr4.drl6.gen</argument>
                                     </arguments>
-                                    <listener>false</listener>
+                                    <listener>true</listener>
                                     <visitor>true</visitor>
                                 </configuration>
                             </execution>

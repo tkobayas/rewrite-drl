@@ -1,0 +1,1 @@
+These antlr4 grammar files are DRL6 compatible (at the time of https://github.com/apache/incubator-kie-drools/commit/eab4bbf42510643f6a6aaefbcf6e0a1bfa2d9274), so they can be used to parse DRL6 files and develop recipes to migrate them to DRL10.

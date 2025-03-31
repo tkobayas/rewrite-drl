@@ -1,24 +1,12 @@
 // Generated from DRL6Expressions.g4 by ANTLR 4.10.1
-package org.drools.drl.parser.antlr4;
+package org.drools.drl.parser.antlr4.drl6.gen;
 
-import java.util.List;
 
-import org.antlr.v4.runtime.NoViableAltException;
-import org.antlr.v4.runtime.Parser;
-import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.RuntimeMetaData;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
-import org.antlr.v4.runtime.Vocabulary;
-import org.antlr.v4.runtime.VocabularyImpl;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.ParserATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.tree.ParseTreeVisitor;
-import org.antlr.v4.runtime.tree.TerminalNode;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.tree.*;
+import java.util.List;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class DRL6Expressions extends Parser {
@@ -265,6 +253,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterLiteral(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitLiteral(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitLiteral(this);
 			else return visitor.visitChildren(this);
@@ -315,6 +311,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operator; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterOperator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitOperator(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitOperator(this);
@@ -426,6 +430,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_relationalOp; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterRelationalOp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitRelationalOp(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitRelationalOp(this);
 			else return visitor.visitChildren(this);
@@ -530,6 +542,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_complexOp; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterComplexOp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitComplexOp(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitComplexOp(this);
 			else return visitor.visitChildren(this);
@@ -574,6 +594,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeList; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterTypeList(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitTypeList(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitTypeList(this);
@@ -628,6 +656,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterType(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitType(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitType(this);
@@ -688,6 +724,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeMatch; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterTypeMatch(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitTypeMatch(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitTypeMatch(this);
@@ -816,6 +860,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_typeArguments; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterTypeArguments(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitTypeArguments(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitTypeArguments(this);
 			else return visitor.visitChildren(this);
@@ -879,6 +931,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArgument; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterTypeArgument(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitTypeArgument(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitTypeArgument(this);
@@ -1155,6 +1215,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_drlIdentifier; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterDrlIdentifier(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitDrlIdentifier(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitDrlIdentifier(this);
@@ -1772,6 +1840,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_drlKeywords; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterDrlKeywords(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitDrlKeywords(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitDrlKeywords(this);
 			else return visitor.visitChildren(this);
@@ -2172,6 +2248,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_builtInOperator; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterBuiltInOperator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitBuiltInOperator(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitBuiltInOperator(this);
 			else return visitor.visitChildren(this);
@@ -2222,6 +2306,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_dummy; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterDummy(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitDummy(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitDummy(this);
 			else return visitor.visitChildren(this);
@@ -2270,6 +2362,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_dummy2; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterDummy2(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitDummy2(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitDummy2(this);
 			else return visitor.visitChildren(this);
@@ -2316,6 +2416,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExpression(this);
@@ -2368,6 +2476,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_conditionalExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterConditionalExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitConditionalExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitConditionalExpression(this);
@@ -2423,6 +2539,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_ternaryExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterTernaryExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitTernaryExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitTernaryExpression(this);
 			else return visitor.visitChildren(this);
@@ -2477,6 +2601,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_fullAnnotation; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterFullAnnotation(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitFullAnnotation(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitFullAnnotation(this);
@@ -2541,6 +2673,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_annotationArgs; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAnnotationArgs(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAnnotationArgs(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAnnotationArgs(this);
 			else return visitor.visitChildren(this);
@@ -2602,6 +2742,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_annotationElementValuePairs; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAnnotationElementValuePairs(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAnnotationElementValuePairs(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAnnotationElementValuePairs(this);
 			else return visitor.visitChildren(this);
@@ -2661,6 +2809,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_annotationElementValuePair; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAnnotationElementValuePair(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAnnotationElementValuePair(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAnnotationElementValuePair(this);
 			else return visitor.visitChildren(this);
@@ -2709,6 +2865,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationValue; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAnnotationValue(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAnnotationValue(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAnnotationValue(this);
@@ -2932,6 +3096,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_annotationArray; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAnnotationArray(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAnnotationArray(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAnnotationArray(this);
 			else return visitor.visitChildren(this);
@@ -3013,6 +3185,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_conditionalOrExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterConditionalOrExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitConditionalOrExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitConditionalOrExpression(this);
 			else return visitor.visitChildren(this);
@@ -3092,6 +3272,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_conditionalAndExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterConditionalAndExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitConditionalAndExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitConditionalAndExpression(this);
 			else return visitor.visitChildren(this);
@@ -3164,6 +3352,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_inclusiveOrExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInclusiveOrExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInclusiveOrExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInclusiveOrExpression(this);
 			else return visitor.visitChildren(this);
@@ -3226,6 +3422,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_exclusiveOrExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExclusiveOrExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExclusiveOrExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExclusiveOrExpression(this);
 			else return visitor.visitChildren(this);
@@ -3287,6 +3491,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_andExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAndExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAndExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAndExpression(this);
@@ -3354,6 +3566,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_equalityExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterEqualityExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitEqualityExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitEqualityExpression(this);
@@ -3433,6 +3653,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_instanceOfExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInstanceOfExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInstanceOfExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInstanceOfExpression(this);
 			else return visitor.visitChildren(this);
@@ -3503,6 +3731,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_inExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInExpression(this);
@@ -3643,6 +3879,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_relationalExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterRelationalExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitRelationalExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitRelationalExpression(this);
 			else return visitor.visitChildren(this);
@@ -3661,7 +3905,7 @@ public class DRL6Expressions extends Parser {
 			setState(552);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,37,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -3714,6 +3958,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_orRestriction; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterOrRestriction(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitOrRestriction(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitOrRestriction(this);
 			else return visitor.visitChildren(this);
@@ -3733,7 +3985,7 @@ public class DRL6Expressions extends Parser {
 			setState(563);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,39,_ctx);
-			while ( _alt!=1 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=1 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1+1 ) {
 					{
 					{
@@ -3807,6 +4059,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_andRestriction; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAndRestriction(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAndRestriction(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAndRestriction(this);
 			else return visitor.visitChildren(this);
@@ -3826,7 +4086,7 @@ public class DRL6Expressions extends Parser {
 			setState(577);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,42,_ctx);
-			while ( _alt!=1 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=1 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1+1 ) {
 					{
 					{
@@ -3887,6 +4147,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_singleRestriction; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterSingleRestriction(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitSingleRestriction(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitSingleRestriction(this);
@@ -3998,6 +4266,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_shiftExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterShiftExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitShiftExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitShiftExpression(this);
 			else return visitor.visitChildren(this);
@@ -4016,7 +4292,7 @@ public class DRL6Expressions extends Parser {
 			setState(599);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,45,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -4057,6 +4333,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_shiftOp; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterShiftOp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitShiftOp(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitShiftOp(this);
@@ -4133,6 +4417,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_additiveExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAdditiveExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAdditiveExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAdditiveExpression(this);
@@ -4211,6 +4503,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_multiplicativeExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterMultiplicativeExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitMultiplicativeExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitMultiplicativeExpression(this);
 			else return visitor.visitChildren(this);
@@ -4283,6 +4583,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unaryExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterUnaryExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitUnaryExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitUnaryExpression(this);
@@ -4544,6 +4852,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unaryExpressionNotPlusMinus; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterUnaryExpressionNotPlusMinus(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitUnaryExpressionNotPlusMinus(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitUnaryExpressionNotPlusMinus(this);
@@ -4854,6 +5170,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_castExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterCastExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitCastExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitCastExpression(this);
 			else return visitor.visitChildren(this);
@@ -4923,6 +5247,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_backReferenceExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterBackReferenceExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitBackReferenceExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitBackReferenceExpression(this);
 			else return visitor.visitChildren(this);
@@ -4959,7 +5291,7 @@ public class DRL6Expressions extends Parser {
 				setState(684); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,56,_ctx);
-			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			setState(686);
 			unaryExpressionNotPlusMinus();
 			}
@@ -5004,6 +5336,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primitiveType; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterPrimitiveType(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitPrimitiveType(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitPrimitiveType(this);
@@ -5097,6 +5437,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_xpathSeparator; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterXpathSeparator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitXpathSeparator(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitXpathSeparator(this);
 			else return visitor.visitChildren(this);
@@ -5145,6 +5493,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_xpathPrimary; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterXpathPrimary(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitXpathPrimary(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitXpathPrimary(this);
 			else return visitor.visitChildren(this);
@@ -5163,7 +5519,7 @@ public class DRL6Expressions extends Parser {
 			setState(704);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,58,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -5214,6 +5570,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_xpathChunk; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterXpathChunk(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitXpathChunk(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitXpathChunk(this);
 			else return visitor.visitChildren(this);
@@ -5235,7 +5599,7 @@ public class DRL6Expressions extends Parser {
 			setState(713);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,59,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -5306,6 +5670,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_xpathExpressionList; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterXpathExpressionList(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitXpathExpressionList(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitXpathExpressionList(this);
@@ -5452,6 +5824,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_primary; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterPrimary(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitPrimary(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitPrimary(this);
 			else return visitor.visitChildren(this);
@@ -5573,7 +5953,7 @@ public class DRL6Expressions extends Parser {
 				setState(783);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,67,_ctx);
-				while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						setState(781);
@@ -5691,6 +6071,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_inlineListExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInlineListExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInlineListExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInlineListExpression(this);
 			else return visitor.visitChildren(this);
@@ -5742,6 +6130,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_inlineMapExpression; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInlineMapExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInlineMapExpression(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInlineMapExpression(this);
 			else return visitor.visitChildren(this);
@@ -5788,6 +6184,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_mapExpressionList; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterMapExpressionList(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitMapExpressionList(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitMapExpressionList(this);
@@ -5846,6 +6250,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_mapEntry; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterMapEntry(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitMapEntry(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitMapEntry(this);
 			else return visitor.visitChildren(this);
@@ -5888,6 +6300,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parExpression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterParExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitParExpression(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitParExpression(this);
@@ -5946,6 +6366,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifierSuffix; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterIdentifierSuffix(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitIdentifierSuffix(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitIdentifierSuffix(this);
@@ -6013,7 +6441,7 @@ public class DRL6Expressions extends Parser {
 					setState(831); 
 					_errHandler.sync(this);
 					_alt = getInterpreter().adaptivePredict(_input,73,_ctx);
-				} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+				} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 				}
 				break;
 			case 3:
@@ -6062,6 +6490,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_creator; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterCreator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitCreator(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitCreator(this);
@@ -6143,6 +6579,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_createdName; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterCreatedName(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitCreatedName(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitCreatedName(this);
@@ -6233,6 +6677,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_innerCreator; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInnerCreator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInnerCreator(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInnerCreator(this);
 			else return visitor.visitChildren(this);
@@ -6284,6 +6736,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arrayCreatorRest; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterArrayCreatorRest(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitArrayCreatorRest(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitArrayCreatorRest(this);
@@ -6491,7 +6951,7 @@ public class DRL6Expressions extends Parser {
 				setState(884);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,82,_ctx);
-				while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						{
@@ -6511,7 +6971,7 @@ public class DRL6Expressions extends Parser {
 				setState(891);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,83,_ctx);
-				while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						{
@@ -6555,6 +7015,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableInitializer; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterVariableInitializer(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitVariableInitializer(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitVariableInitializer(this);
@@ -6770,6 +7238,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_arrayInitializer; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterArrayInitializer(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitArrayInitializer(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitArrayInitializer(this);
 			else return visitor.visitChildren(this);
@@ -6796,7 +7272,7 @@ public class DRL6Expressions extends Parser {
 				setState(906);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,86,_ctx);
-				while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						{
@@ -6848,6 +7324,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_classCreatorRestExpr; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterClassCreatorRestExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitClassCreatorRestExpr(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitClassCreatorRestExpr(this);
 			else return visitor.visitChildren(this);
@@ -6886,6 +7370,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocation; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExplicitGenericInvocation(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExplicitGenericInvocation(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExplicitGenericInvocation(this);
@@ -6926,6 +7418,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArguments; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterNonWildcardTypeArguments(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitNonWildcardTypeArguments(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitNonWildcardTypeArguments(this);
@@ -6975,6 +7475,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocationSuffix; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExplicitGenericInvocationSuffix(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExplicitGenericInvocationSuffix(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExplicitGenericInvocationSuffix(this);
@@ -7054,6 +7562,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_selector; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterSelector(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitSelector(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitSelector(this);
@@ -7176,6 +7692,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_superSuffix; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterSuperSuffix(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitSuperSuffix(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitSuperSuffix(this);
 			else return visitor.visitChildren(this);
@@ -7242,6 +7766,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_squareArguments; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterSquareArguments(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitSquareArguments(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitSquareArguments(this);
 			else return visitor.visitChildren(this);
@@ -7292,6 +7824,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arguments; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterArguments(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitArguments(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitArguments(this);
@@ -7350,6 +7890,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expressionList; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExpressionList(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExpressionList(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExpressionList(this);
@@ -7417,6 +7965,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assignmentOperator; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterAssignmentOperator(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitAssignmentOperator(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitAssignmentOperator(this);
@@ -7550,6 +8106,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_extends_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterExtends_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitExtends_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitExtends_key(this);
 			else return visitor.visitChildren(this);
@@ -7584,6 +8148,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_super_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterSuper_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitSuper_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitSuper_key(this);
@@ -7620,6 +8192,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_instanceof_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInstanceof_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInstanceof_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInstanceof_key(this);
 			else return visitor.visitChildren(this);
@@ -7654,6 +8234,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_boolean_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterBoolean_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitBoolean_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitBoolean_key(this);
@@ -7690,6 +8278,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_char_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterChar_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitChar_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitChar_key(this);
 			else return visitor.visitChildren(this);
@@ -7724,6 +8320,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_byte_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterByte_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitByte_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitByte_key(this);
@@ -7760,6 +8364,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_short_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterShort_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitShort_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitShort_key(this);
 			else return visitor.visitChildren(this);
@@ -7794,6 +8406,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_int_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterInt_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitInt_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitInt_key(this);
@@ -7830,6 +8450,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_float_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterFloat_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitFloat_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitFloat_key(this);
 			else return visitor.visitChildren(this);
@@ -7864,6 +8492,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_long_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterLong_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitLong_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitLong_key(this);
@@ -7900,6 +8536,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_double_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterDouble_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitDouble_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitDouble_key(this);
 			else return visitor.visitChildren(this);
@@ -7934,6 +8578,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_void_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterVoid_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitVoid_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitVoid_key(this);
@@ -7970,6 +8622,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_this_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterThis_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitThis_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitThis_key(this);
 			else return visitor.visitChildren(this);
@@ -8004,6 +8664,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_class_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterClass_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitClass_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitClass_key(this);
@@ -8040,6 +8708,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_new_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterNew_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitNew_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitNew_key(this);
 			else return visitor.visitChildren(this);
@@ -8075,6 +8751,14 @@ public class DRL6Expressions extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_not_key; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterNot_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitNot_key(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitNot_key(this);
 			else return visitor.visitChildren(this);
@@ -8109,6 +8793,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_in_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterIn_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitIn_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitIn_key(this);
@@ -8148,6 +8840,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operator_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterOperator_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitOperator_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitOperator_key(this);
@@ -8220,6 +8920,14 @@ public class DRL6Expressions extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_neg_operator_key; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).enterNeg_operator_key(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof DRL6ExpressionsListener ) ((DRL6ExpressionsListener)listener).exitNeg_operator_key(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof DRL6ExpressionsVisitor ) return ((DRL6ExpressionsVisitor<? extends T>)visitor).visitNeg_operator_key(this);
